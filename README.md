@@ -1,4 +1,4 @@
-akerl/dev
+akerl/dns
 =======
 
 [![Trusted Build](http://img.shields.io/badge/trusted-build-green.svg)](https://index.docker.io/u/akerl/dev/)
