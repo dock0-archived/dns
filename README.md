@@ -6,7 +6,7 @@ akerl/dns
 
 A development container. It's basically [akerl/arch](https://github.com/dock0/arch) with some useful packages.
 
-Useful for debugging strange network/containe happenings.
+Useful for debugging strange network/container happenings.
 
 ## License
 
