@@ -1,12 +1,10 @@
-akerl/dns
+dock0/dns
 =======
 
-[![Trusted Build](http://img.shields.io/badge/trusted-build-green.svg)](https://index.docker.io/u/akerl/dev/)
+[![Trusted Build](http://img.shields.io/badge/trusted-build-green.svg)](https://index.docker.io/u/dock0/dns/)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
-A development container. It's basically [akerl/arch](https://github.com/dock0/arch) with some useful packages.
-
-Useful for debugging strange network/container happenings.
+Nameserver container that loads my DNS zones.
 
 ## License
 
