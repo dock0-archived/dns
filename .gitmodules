@@ -1,3 +1,0 @@
-[submodule "dns"]
-	path = dns
-	url = git://github.com/akerl/dns.git
