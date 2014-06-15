@@ -1,4 +1,5 @@
 #!/bin/sh
 
-exec /usr/bin/nsd -d -c /etc/nsd/nsd.conf 2>&1
+nsd-control-setup
+exec /usr/bin/nsd -d -c /opt/dns/nsd.conf 2>&1
 
