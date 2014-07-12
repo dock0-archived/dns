@@ -1,7 +1,7 @@
 dock0/dns
 =======
 
-[![Trusted Build](http://img.shields.io/badge/trusted-build-green.svg)](https://registry.hub.docker.com/u/dock0/dns/)
+[![Automated Build](http://img.shields.io/badge/automated-build-green.svg)](https://registry.hub.docker.com/u/dock0/dns/)
 [![MIT Licensed](http://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 Nameserver container that loads my DNS zones.
