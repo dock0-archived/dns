@@ -9,5 +9,5 @@ test:
   override:
     - docker run -ti test /bin/true
     - docker run -ti test /bin/bash --version
-    - docker run -d -p 53:53 test && sleep 5
-    - echo ' ' | netcat localhost 53
+    - docker run -d -p 1053:53 test && sleep 5
+    - dig @localhost -p 1053 akerl.org
