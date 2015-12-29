@@ -1,0 +1,13 @@
+item do
+  name 'dns::submodule'
+
+  expected do
+    github_hash
+    repo 'akerl/dns'
+  end
+
+  actual do
+    git_hash
+    dir 'src'
+  end
+end
