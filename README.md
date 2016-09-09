@@ -1,3 +1,5 @@
+**Inactive Project:** I've stopped using this project in favor of deploying DNS changes to Route53 using CircleCI (https://github.com/akerl/dns/blob/master/circle.yml)
+
 dock0/dns
 =======
 
