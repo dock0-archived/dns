@@ -1,0 +1,15 @@
+sudo: required
+dist: trusty
+services:
+- docker
+install:
+- docker build -t test .
+script:
+- docker run -ti test /bin/true
+- docker run -ti test /bin/bash --version
+- docker run -d -p 1053:53 -p 1053:53/udp test && sleep 5
+- dig @localhost -p 1053 akerl.org
+notifications:
+  email: false
+  slack:
+    secure: kLBzgVvPL17SqCZz3pV6otnd3NQu8w65g2Pjcp1ZeO+SKlOEo/GVt/48+aJH0J/7lgvaHOeP5rr1bvgL2rjn+2lFS5tHsLwYeHcjOk1q4f9TkLnEhcvWz7Xvjyj4ykcRC6lFS4BEKZpcKjJRDs+Rr3ROUwSFGLrmzq4jCer7oJqRlGS2toMGQX1UxLQRX3+N9T382risnUw000FWbbp3Lft5BzcIG7+Z4G94QrMZzedbJFF3ZgRYW5BiNN2oHcRYnFMsm27HDcHMg30lm1WTmyT5GQpUTd5saKwAEbhr7YrIg9K6MWy1gfsgqIwFYt1ICAfcyjXcYKlgRDX1jCFJOAijuql/xjyyInuhSeWWPAig9DafcM2bqMBJuIzyDF8RerLZPGpKoE1uCHVyDHNabbfZYdjFpbq/qd+agfcGSU0ksZvtKIXWC8ZAFZu7Nit7ZaTFltFKW4qLkBUuyTzBiLWUN+dkkdrdxcI8IVRsn6rP5sFRa8dDTHuonz68T/By1itYsG3ZTCloxuyyH0egku7v9D8v5EulE7zchp4mbqU+tJ/02dPaYg8+82bNF6T1Is1tGu+wUMYuihRIybMBW3yxXkQ6EQMQEUvj81AAw7n48iVC09roxjm9IrAg02KRn9OCObnYqfMzk3kEpwI8rPFL7pFoZayDRwX4hvX2J4U=
